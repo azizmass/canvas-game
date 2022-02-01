@@ -187,7 +187,7 @@ const angle =Math.atan2(canvas.height/2-y,canvas.width/2-x)
 }
 
  window.addEventListener("click",function(event){
-    const angle =Math.atan2(event.clientY-canvas.width/2,event.clientX-canvas.height/2)
+    const angle =Math.atan2(event.clientY-canvas.height/2,event.clientX-canvas.width/2)
      projectiles.push(new Projectile(x,y,5,'white',{x:Math.cos(angle)*5,y:Math.sin(angle)*5}))
      
     
